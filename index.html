@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Firebase Auth App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <div id="form_container">
+      <div id="form_header_container">
+        <h2 id="form_header"> Firebase Auth App </h2>
+      </div>
+      <div id="form_content_container">
+        <div id="form_content_inner_container">  
+          <input type="text" id="full_name" placeholder="Имя пользователя">
+          <input type="email" id="email" placeholder="Почта">
+          <input type="password" id="password" placeholder="Пароль">
+          <div id="reg_button-section">
+            <button id="reg_button" class="auth-button" onclick="register()">Зарегистрироваться</button>
+            <p id="button_description">Уже зарегистрированы?<button id="login_redirect-button" class="auth-button" onclick="redirectToLogin()">Войти</button></p>
+            <button id="logout_button" class="inactive-button" onclick="logout()" disabled>Выйти из аккаунта</button>
+          </div>
+          <div id="login_button-section" style="display: none;">
+            <button id="login_button" class="auth-button" onclick="login()">Войти</button>
+            <p id="button_description">Еще нет аккаунта?<button id="reg_redirect-button" class="auth-button" onclick="redirectToReg()">Зарегистрироваться</button></p>
+            <button id="logout_button" class="inactive-button" onclick="logout()" disabled>Выйти из аккаунта</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="index.js"></script>
+</html>

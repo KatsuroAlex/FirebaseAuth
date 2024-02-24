@@ -1,0 +1,198 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(70deg, #2d50d3, #17fd71);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form_container {
+  max-width: 800px;
+  min-height: 40%;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 50px -20px #000;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+#form_header_container {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-bottom: 1px solid #fff;
+  background: #000;
+}
+
+#form_header {
+  display: inline-block;
+  font-size: 19px;
+  font-family: Bowlby One SC;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+#form_content_container {
+  width: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#form_content_inner_container {
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  background: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+  color: #000;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-radius: 10px; 
+  border-color: #000;
+  cursor: pointer;
+}
+
+#full_name::placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+#email::placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+#password::placeholder {
+  color: #000;
+  font-size: 14px;
+}
+
+#reg_button-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#reg_button {
+  width: 70%;
+  height: 45px;
+  background: #000;
+  color: #fff;
+  border-radius: 25px;
+  border-color: #4f3a3a;
+  cursor: pointer;
+}
+
+#reg_button:hover {
+  cursor: pointer;
+  background: #343434;
+}
+
+#button_description {
+  color: #000;
+  width: 100%;
+}
+
+#login_redirect-button {
+  width: 30%;
+  height: 30px;
+  margin-left: 15px;
+  background: #000;
+  color: #fff;
+  border-color: #4f3a3a;
+  cursor: pointer;
+}
+
+#login_redirect-button:hover {
+  cursor: pointer;
+  background: #343434;}
+
+
+#login_button-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#login_button {
+  width: 70%;
+  height: 45px;
+  background: #000;
+  color: #fff;
+  border-radius: 25px;
+  border-color: #4f3a3a;
+  cursor: pointer;
+}
+
+#login_button:hover {
+  cursor: pointer;
+  background: #343434;}
+
+#reg_redirect-button {
+  width: 40%;
+  height: 30px;
+  margin-left: 15px;
+  background: #000;
+  color: #fff;
+  border-color: #4f3a3a;
+  cursor: pointer;
+}
+
+#reg_redirect-button:hover {
+  cursor: pointer;
+  background: #343434;}
+
+#logout_button {
+  width: 40%;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  border-color: #4f3a3a;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#logout_button:hover {
+  cursor: pointer;
+  background: #343434;
+}
+
+.inactive-button {
+  background: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
